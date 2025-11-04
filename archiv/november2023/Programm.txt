@@ -1,0 +1,413 @@
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1"
+                                                   href="#collapseOne1">
+                                <div class="hoersaal color1"> 19:00 HS T.</div>
+                                Die Kreislauffabrik - mit moderner Produktionstechnik Welt und Wohlstand retten</a></h4>
+                    </div>
+                    <div id="collapseOne1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Dr.-Ing. Florian Stamer, <a href="https://www.wbk.kit.edu/21_3157.php" target="_blank">WBK</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion2"
+                                                   href="#collapseOne2">
+                                <div class="hoersaal color3"> 19:00 HS R.</div>
+                                Rom ist auch nicht an einem Tag gebaut werden - Grundlagen des Forschungsdatenmanagement </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            Referenten: Charlotte Neidiger, Michael Anger, <a href="https://www.bibliothek.kit.edu/mitarbeiter.php" target="_blank">KIT-Bib</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion3"
+                                                   href="#collapseOne3">
+                                <div class="hoersaal triangel"> 19:00 Tri.</div>
+                               Coming Soon</a></h4>
+                    </div>
+                    <div id="collapseOne3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Holger Puchta, <a href="https://www.jkip.kit.edu/molbio/14_146.php" target="_blank">JKIP</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion4"
+                                                   href="#collapseOne4">
+                                <div class="hoersaal color1"> 20:00 HS T.</div> Coming Soon
+                            </a></h4>
+                    </div>
+                    <div id="collapseOne4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referentin: Prof. Dr.-Ing. Ulrike Krewer, <a href="https://www.iam.kit.edu/et/mitarbeiter_5189.php"target="_blank">IAM-ET</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion5"
+                                                   href="#collapseOne5">
+                                <div class="hoersaal color3"> 20:00 HS R.</div>
+                               Coming Soon</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Albert Albers, <a href="https://www.ipek.kit.edu/21_88.php"
+                                                                              target="_blank">IPEK</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion6">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion6" href="#collapseOne6">
+                    <div class="hoersaal triangel" > 20:00 Tri. </div>
+                    Die Vermessung der Welt </a></h4>
+                </div>
+                <div id="collapseOne6" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                    <p>Referent: Prof. Dr.-Ing. Hansjörg Kutterer <a href="https://www.gik.kit.edu/mitarbeiter_kutterer_hansjoerg.php" target="_blank">GIK</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion7">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion7"
+                                                   href="#collapseOne7">
+                                <div class="hoersaal color1"> 21:00 HS T.</div>
+                                Coming Soon (English Lecture)</a></h4>
+                    </div>
+                    <div id="collapseOne7" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Markus Klute, <a
+                                        href="https://www.etp.kit.edu/mitarbeiter_1205.php"
+                                        target="_blank">ETP</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion8"
+                                                   href="#collapseOne8">
+                                <div class="hoersaal color3"> 21:00 HS R.</div>
+                                We're nothing but mammals - Evolutionäre Einflüsse auf ökonomische
+Entscheidungen </a></h4>
+                    </div>
+                    <div id="collapseOne8" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Benjamin Scheibehenne, <a href="https://cub.iism.kit.edu/83_92.php"
+                                                                   target="_blank">IISM</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion9">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion9" href="#collapseOne9">
+                    <div class="hoersaal triangel" > 21:00 Tri. </div>
+                    Katalyse: Chemie für die Zukunft – sauberer, effizienter, cleverer</a></h4>
+                </div>
+                <div id="collapseOne9" class="panel-collapse collapse">
+                  <div class="panel-body">
+                  <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                    <p>Referent: Prof. Dr. Jan-Dierk Grunwaldt, <a href="https://www.itcp.kit.edu/grunwaldt/24.php" target="_blank">ITCP</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion10">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion10"
+                                                   href="#collapseOne10">
+                                <div class="hoersaal color1"> 22:00 HS T.</div>
+                                Komplexe Klimakrise - Herausforderungen und Chancen in Zeiten des Wandels </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne10" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Dr. Christian Scharun, <a href="https://www.nawik.de/team/dr-christian-scharun/"
+                                                                    target="_blank">NaWik</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion11">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion11"
+                                                   href="#collapseOne11">
+                                <div class="hoersaal color3"> 22:00 HS R.</div>
+                                Humanoid Robotics – General-Purpose Functional Intelligence (English Lecture)</a></h4>
+                    </div>
+                    <div id="collapseOne11" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Tamim Asfour, <a href="https://h2t.iar.kit.edu/21_2372.php"
+                                                                          target="_blank">H2T</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion12"
+                                                   href="#collapseOne12">
+                                <div class="hoersaal triangel"> 22:00 Tri.</div>
+                                Tatort Boden: Mörderische Pilze mit Anwendungspotenzial </a></h4>
+                    </div>
+                    <div id="collapseOne12" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Prof. Dr. Reinhard Fischer <a href="https://www.iab.kit.edu/microbio/487_507.php"
+                                                                      target="_blank">IAB</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion13">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-center"><a data-toggle="collapse" data-parent="#accordion13"
+                                                               href="#collapseOne13">
+                                <div class="hoersaal color1"> 23:00 HS T.</div>
+                                Coming Soon (English Lecture)</a></h4>
+                    </div>
+                    <div id="collapseOne13" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referentin: Prof. Dr. Gudrun Heinrich <a href="https://www.itp.kit.edu/memberpages/heinrich"
+                                                                      target="_blank">ITP</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion14">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-center"><a data-toggle="collapse" data-parent="#accordion14"
+                                                               href="#collapseOne14">
+                                <div class="hoersaal color3"> 23:00 HS R.</div>
+                                Coming Soon </a></h4>
+                    </div>
+                    <div id="collapseOne14" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Dr. Ioannis Anapolitanos <a href="https://www.math.kit.edu/iana1/~anapolitanos/de"
+                                                                      target="_blank">IANA</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel-group" id="accordion15">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title text-center"><a data-toggle="collapse" data-parent="#accordion15"
+                                                               href="#collapseOne15">
+                                <div class="hoersaal triangel"> 23:00 Tri.</div>
+                                Mit Sicherheit regeln und steuern <br> Safety & Security in modernen Automatisierungssystemen. </a></h4>
+                    </div>
+                    <div id="collapseOne15" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referenten: Prof. Dr. Mike Barth und Prof. Dr. Sören Hohmann <a href="https://www.irs.kit.edu/index.php"
+                                                                      target="_blank">IRS</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-6 col-md-offset-3">
+            <div class="panel-group" id="accordion16">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion16"
+                                                   href="#collapseOne16">
+                                <div class="hoersaal color1"> 0:00 HS T.</div>
+                                Die Physiker - Stück von Friedrich Dürrenmatt </a></h4>
+                    </div>
+                    <div id="collapseOne16" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Physiker Theater <a href="https://physikertheater.de/"
+                                                                      target="_blank"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-offset-3">
+            <div class="panel-group" id="accordion17">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion17"
+                                                   href="#collapseOne17">
+                                <div class="hoersaal color1"> 01:00 HS T.</div>
+                                Zwerge auf den Schultern von Riesen - Unser Selbstverständnis als Forschende</a></h4>
+                    </div>
+                    <div id="collapseOne17" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referentin: Valerie Boda <a href="https://www.bibliothek.kit.edu/mitarbeiter_3900.php"
+                                                                      target="_blank"></a>KIT-BIB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-offset-3">
+            <div class="panel-group" id="accordion18">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion18"
+                                                   href="#collapseOne18">
+                                <div class="hoersaal color1"> 02:00 HS T.</div>
+                                Von Zitronen und Schaukelstühlen – Wie Li-ionen Batterien den Alltag erobern</a></h4>
+                    </div>
+                    <div id="collapseOne18" class="panel-collapse collapse">
+                        <div class="panel-body">
+                        <div class="img-container"><img src="images\logo.png"  width="100"/><br/>
+                            Bild: Platzhalter                               
+                            </div>
+                            <p> <!-- Placeholder Teaser --></p>
+                            <p>Referent: Dr. Fabian Jeschull <a href="https://www.iam.kit.edu/ess/21_1488.php"
+                                                                      target="_blank"></a>IAM-ET</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

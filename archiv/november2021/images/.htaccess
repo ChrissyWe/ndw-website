@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteCond %{REMOTE_ADDR} ^129\.13\.72\.198$
+RewriteRule ^(.*)marker\-icon\.png $1marker-omnom.png
+
+RewriteCond %{REMOTE_ADDR} ^129\.13\.72\.198$
+RewriteRule ^(.*)marker\-icon\-2x\.png $1marker-omnom-2x.png

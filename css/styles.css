@@ -1,0 +1,848 @@
+/* =========================================================
+   0) CSS Custom Properties (theme)
+   ---------------------------------------------------------*/
+:root {
+    --text-on-dark: #ffffff;
+    --text-muted: rgba(255, 255, 255, .85);
+    --text-dimmer: rgba(255, 255, 255, .75);
+    --card-border: rgba(255, 255, 255, .2);
+    --card-bg: rgba(0, 0, 0, .35);
+}
+
+/* =========================================================
+   1) Base / Layout / Typography
+   ---------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text-on-dark);
+    background:
+        radial-gradient(circle at 20% 20%, #280a3a 0%, transparent 60%),
+        radial-gradient(circle at 80% 40%, #0C002A 0%, transparent 70%),
+        linear-gradient(90deg, #2a114a 0%, #000 50%, #0f0428 70%, #1A0548 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 1rem 3rem 3rem;
+    /* breathing room around header/hero */
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+/* =========================================================
+   2) Accessibility helpers
+   ---------------------------------------------------------*/
+/* Make the skip link visible when focused (Bootstrap visually hides it) */
+.visually-hidden-focusable:focus {
+    position: static !important;
+    width: auto;
+    height: auto;
+    clip: auto;
+    clip-path: none;
+    padding: .5rem .75rem;
+    background: #fff;
+    color: #000;
+    border-radius: .25rem;
+    box-shadow: 0 0 0 2px #000 inset;
+}
+
+/* =========================================================
+   3) Headings (shared styles)
+   ---------------------------------------------------------*/
+.section-heading,
+.section-heading-about {
+    font-size: clamp(1.25rem, 1rem + 1.5vw, 2rem);
+    font-weight: 600;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--text-on-dark);
+    margin-bottom: 2rem;
+}
+
+.section-heading-about {
+    text-align: center;
+}
+
+/* =========================================================
+   4) Header / Main navigation (desktop + mobile)
+   ---------------------------------------------------------*/
+header .brand {
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--text-on-dark);
+    text-decoration: none;
+}
+
+header .nav-link {
+    color: var(--text-on-dark);
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .nav-link:hover,
+header .nav-link:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Glassy dropdowns inside #header wrapper (works for desktop and burger menu) */
+#header .dropdown-menu {
+    background: rgba(0, 0, 0, .35) !important;
+    border: 1px solid var(--card-border) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .6) !important;
+    backdrop-filter: saturate(120%) blur(6px) !important;
+    -webkit-backdrop-filter: saturate(120%) blur(6px) !important;
+    border-radius: 8px !important;
+    padding: .5rem 0 !important;
+    min-width: 14rem !important;
+    z-index: 2000 !important;
+}
+
+#header .dropdown-item {
+    color: rgba(255, 255, 255, .85) !important;
+    font-weight: 600 !important;
+    letter-spacing: .03em !important;
+    padding: .45rem 1rem !important;
+}
+
+#header .dropdown-item:hover,
+#header .dropdown-item:focus {
+    color: #fff !important;
+    background: rgba(255, 255, 255, .10) !important;
+}
+
+#header .dropdown-item.active,
+#header .dropdown-item:active {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+/* caret color + spacing for dropdown toggles */
+#header .dropdown-toggle::after {
+    margin-left: .35rem !important;
+    border-top-color: #fff !important;
+}
+
+/* Burger button (mobile trigger) */
+#header .burger,
+button.burger {
+    background: rgba(0, 0, 0, .35);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 8px;
+    padding: .5rem .6rem;
+    backdrop-filter: saturate(120%) blur(6px);
+    -webkit-backdrop-filter: saturate(120%) blur(6px);
+}
+
+#header .burger .burger-icon rect,
+.burger-icon rect {
+    fill: var(--text-on-dark);
+    transition: fill .2s ease;
+}
+
+#header .burger:hover .burger-icon rect,
+#header .burger:focus .burger-icon rect,
+button:hover .burger-icon rect,
+button:focus .burger-icon rect {
+    fill: #fff;
+}
+
+/* =========================================================
+   5) Hero (headline, buttons, graphic)
+   ---------------------------------------------------------*/
+.hero-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical centering on tall screens */
+}
+
+.hero-headline {
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin-bottom: 2rem;
+    font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
+
+.hero-graphic {
+    width: 100%;
+    height: auto;
+    max-width: clamp(280px, 40vw, 500px);
+}
+
+/* hero content wrapper */
+#hauptinhalt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding-left: clamp(1rem, 6vw, 3rem);
+    padding-top: clamp(4vh, 8vh, 12vh);
+}
+
+@media (min-width: 992px) {
+    #hauptinhalt {
+        text-align: left;
+    }
+}
+
+/* Mobile helpers for centering CTA paragraph and group */
+@media (max-width: 992px) {
+    #hauptinhalt p.d-flex {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* CTA buttons */
+.btn-outline-light-custom {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .75rem 1rem;
+}
+
+.btn-outline-light-custom:hover,
+.btn-outline-light-custom:focus {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-light-custom {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: .75rem 1rem;
+}
+
+.btn-light-custom:hover,
+.btn-light-custom:focus {
+    background: #e6e6e6;
+    border-color: #e6e6e6;
+    text-decoration: none;
+}
+
+/* CTA dropdown next to buttons (glass style) */
+.hero-dropdown {
+    display: inline-flex;
+}
+
+.hero-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+.hero-dropdown .dropdown-menu {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: .5rem;
+    min-width: 14rem;
+}
+
+.hero-dropdown .dropdown-item {
+    color: var(--text-on-dark);
+}
+
+.hero-dropdown .dropdown-item:hover,
+.hero-dropdown .dropdown-item:focus {
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+}
+
+/* CTA buttons layout rules */
+.hero-cta .btn {
+    width: auto;
+}
+
+/* default: intrinsic width */
+@media (max-width: 575.98px) {
+    .hero-cta {
+        align-items: stretch;
+    }
+
+    /* smartphone: stack and stretch */
+}
+
+@media (max-width: 992px) {
+    #hauptinhalt .hero-cta {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   6) Highlight section (featured event)
+   ---------------------------------------------------------*/
+.highlight-section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight-row {
+    background: rgba(0, 0, 0, .15);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.highlight-media {
+    margin: 0;
+    line-height: 0;
+}
+
+.highlight-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.highlight-content {
+    color: var(--text-on-dark);
+    background: var(--card-bg);
+    display: flex;
+    align-items: flex-start;
+}
+
+.highlight-content-inner {
+    padding: 1.5rem 2rem;
+    max-width: 70ch;
+}
+
+.highlight-date {
+    font-size: .875rem;
+    color: var(--text-dimmer);
+    margin-bottom: .5rem;
+}
+
+.highlight-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.highlight-body {
+    font-size: .95rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .highlight-row {
+        flex-direction: row;
+    }
+
+    .highlight-media {
+        flex-basis: 65%;
+        min-width: 0;
+    }
+
+    .highlight-media img {
+        min-height: clamp(280px, 30vh, 420px);
+        max-height: clamp(420px, 50vh, 900px);
+    }
+
+    .highlight-content {
+        flex-basis: 35%;
+        background: transparent;
+    }
+}
+
+/* =========================================================
+   7) Schedule (halls and talks)
+   ---------------------------------------------------------*/
+.schedule-section {
+    padding: 4rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hall-heading {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--text-on-dark);
+    margin-bottom: 1rem;
+}
+
+.hall-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .9), 0 0 40px rgba(255, 255, 255, .05) inset;
+    padding: 1.5rem;
+    color: var(--text-on-dark);
+    text-align: center;
+    min-height: 320px;
+}
+
+/* Talk blocks (JS-injected) */
+.talk-block {
+    padding: 1rem 1rem .75rem;
+    color: var(--text-on-dark);
+    margin-bottom: 1rem;
+}
+
+.talk-block:last-child {
+    margin-bottom: 0;
+}
+
+.time-slot {
+    font-size: .8rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--text-dimmer);
+    margin: 0 0 .5rem 0;
+}
+
+/* clickable title toggle */
+.talk-toggle {
+    all: unset;
+    /* remove default button styles */
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-on-dark);
+    padding-right: 1.5rem;
+    /* space for potential chevron */
+}
+
+.talk-toggle:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* collapsible body (height animated via JS) */
+.talk-details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-top: 1px solid var(--card-border);
+    margin-top: .75rem;
+    padding-top: .75rem;
+    transition: max-height .3s ease, opacity .3s ease;
+    will-change: max-height, opacity;
+}
+
+.talk-details-inner {
+    text-align: left;
+}
+
+#event-body,
+#event-speaker,
+#event-language {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-on-dark);
+    /* falls du var benutzt */
+    line-height: 1.4;
+    text-align: left;
+    /* weil du das wolltest */
+    margin: 0 0 .75rem 0;
+    /* optionaler spacing-tweak */
+}
+
+
+.talk-desc {
+    font-size: .9rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+    margin: 0 0 .75rem 0;
+}
+
+.talk-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+/* =========================================================
+   8) About (content, quote, footer, mini-nav, contact row)
+   ---------------------------------------------------------*/
+.about-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+}
+
+.about-visual {
+    max-width: 92vw;
+    justify-self: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    transform: none;
+}
+
+
+.about-content {
+    color: var(--text-on-dark);
+    max-width: 80ch;
+}
+
+.about-title {
+    font-size: clamp(1.6rem, 1rem + 2.2vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: .01em;
+    line-height: 1.25;
+    margin: 0 0 .9rem;
+}
+
+.about-body {
+    font-size: clamp(1rem, .9rem + .2vw, 1.05rem);
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin: 0 0 1.25rem;
+}
+
+.about-quote {
+    margin-top: 1.75rem;
+    font-size: .95rem;
+    letter-spacing: .08em;
+    opacity: .9;
+    text-align: left;
+}
+
+/* ----- Tablet: allow a slight oversize/bleed for depth ----- */
+@media (min-width: 576px) {
+    .about-image {
+        width: 115%;
+        transform: translateX(-6%);
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .about-row {
+        grid-template-columns: minmax(380px, 0.9fr) minmax(540px, 1.4fr);
+        gap: clamp(0.75rem, 1.8vw, 1.25rem);
+    }
+
+    .about-visual {
+        position: relative;
+        min-height: 380px;
+    }
+
+    .about-image {
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        transform: translate(-40%, -45%);
+        width: 420px;
+        max-width: 60vw;
+    }
+
+    .about-content {
+        margin-left: -1.25rem;
+    }
+}
+
+
+/* ===== Footer mini-nav links ===== */
+
+.about-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    font-size: .95rem;
+    color: var(--text-muted);
+}
+
+.about-chat {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.about-mail {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.about-mail-link {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.about-mail-link:hover,
+.about-mail-link:focus {
+    color: var(--text-on-dark);
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+    .about-visual {
+        max-width: 320px;
+    }
+
+    .about-footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about-contact-row {
+        flex-direction: row;
+    }
+}
+
+.about-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.about-nav-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.about-nav-list a:hover,
+.about-nav-list a:focus {
+    color: var(--text-on-dark);
+    text-decoration: underline;
+}
+
+/* =========================================================
+   9) Team grid (cards + photo)
+   ---------------------------------------------------------*/
+.team-grid {
+    /* grid provided by Bootstrap row/cols in HTML */
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin: 0;
+    /* reset default <figure> margin */
+}
+
+.team-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    overflow: hidden;
+    background:
+        radial-gradient(120% 120% at 0% 0%, rgba(255, 255, 255, .04), transparent 60%),
+        var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .35);
+    backdrop-filter: saturate(120%) blur(4px);
+    -webkit-backdrop-filter: saturate(120%) blur(4px);
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-name {
+    margin: .5rem 0 0 0;
+    font-size: .95rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-on-dark);
+}
+
+.team-role {
+    margin: .15rem 0 0 0;
+    font-size: .85rem;
+    line-height: 1.35;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .team-photo {
+        width: 200px;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
+    .team-role {
+        font-size: .9rem;
+    }
+}
+
+/* =========================================================
+   10) Supporter logos
+   ---------------------------------------------------------*/
+.supporter-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem 2.25rem;
+    margin: 0 auto 2rem;
+    max-width: 1100px;
+}
+
+.supporter-logos a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    /* prevent stretching */
+    line-height: 0;
+}
+
+.supporter-logos img {
+    height: 64px !important;
+    width: auto !important;
+    max-width: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================================
+   11) Contact block (Impressum page)
+   ---------------------------------------------------------*/
+.contact-block {
+    font-style: normal;
+    line-height: 1.4;
+}
+
+.contact-mail {
+    display: inline-block;
+    margin-bottom: .35rem;
+    text-decoration: none;
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    text-decoration: underline;
+}
+
+.contact-address {
+    margin: .25rem 0 .75rem 0;
+}
+
+.contact-link {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--text-on-dark);
+    text-decoration: underline;
+}
+
+
+/* Platzhalter optisch zurücknehmen */
+.talk-block.is-placeholder .talk-title-text {
+    opacity: .4;
+}
+
+.talk-block.is-placeholder .talk-toggle {
+    cursor: default;
+}
+
+/* Keep original image ratio, never crop */
+.talk-details-inner .talk-image,
+#event-image {
+    display: block;
+    margin: 0 auto;
+    /* horizontal center */
+    max-width: 100%;
+    height: auto !important;
+    width: auto;
+    object-fit: contain !important;
+}
+
+/* Optional: if you had a fixed wrapper ratio, disable it for images */
+.talk-details-inner,
+.talk-details {
+    aspect-ratio: auto;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Render \n as real line breaks only for long-copy areas */
+.about-body[data-i18n] {
+  white-space: pre-line; /* turn \n into line breaks */
+}

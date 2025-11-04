@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^facebook/2016($|/$|\?.*$) https://www.facebook.com/events/199849767025396/ [NC,L,R=301]
+RewriteRule ^facebook($|/$|\?.*$) https://www.facebook.com/NachtderWissenschaft.Karlsruhe/ [NC,L,R=301]

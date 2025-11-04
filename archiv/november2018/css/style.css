@@ -1,0 +1,171 @@
+/* CSS Document */
+a,
+a:focus {
+  outline: 0;
+}
+a:focus {
+  text-decoration: none;
+}
+.navbar-right li {
+  font-size: 18px;
+}
+.main-navbar {
+  box-shadow: 0 0 10px 5px #172a3a;
+}
+.headerrow {
+  background-image: url(../images/background_header.png);
+  background-size: cover;
+  background-position: center;
+  padding: 6% 0;
+  color: #cce6ff;
+}
+.largeHeadline {
+  font-size: 4.9em;
+}
+.headerrow img {
+  min-width: 220px;
+  max-width: 80%;
+  width: auto;
+  height: auto;
+  max-height: 350px;
+  mix-blend-mode: color-dodge;
+}
+.container h2,
+h3 {
+  color: #99ccff;
+}
+.container h3 {
+  color: #99ccff;
+}
+.footerContainer {
+  margin-top: 40px;
+}
+.invisibleSpacer {
+  border-width: 0;
+  padding-top: 20px;
+}
+.largeInvisibleSpacer {
+  border-width: 0;
+  padding-top: 65px;
+}
+.smallSpacer {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+.stickyElement {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.hoersaal {
+  float: right;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.glyphicon-menu-right {
+  position: absolute;
+  left: -4px;
+}
+.panel-title {
+  position: relative;
+  padding-left: 0px;
+}
+.navelement {
+  height: 42px;
+  position: absolute;
+  margin-top: -42px;
+  border-width: 0px;
+}
+.hs1 {
+  color: #e60000;
+}
+.hs2 {
+  color: #00b300;
+}
+.hs3 {
+  color: #ffb32a;
+}
+.kd2lab {
+  color: #4ac1ec;
+}
+.glyphicon-envelope {
+  position: relative;
+  top: 2px;
+}
+.panel-body .img-container img {
+  max-width: 100%;
+}
+.panel-body .img-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+@media (min-width: 1200px) {
+  .col-lg-12 .panel-body .img-container {
+    /* Wenn gross, werden Vortragsbilder in Containern, die ueber die ganze Seitenbreite gehen, links angezeigt. */
+    width: auto;
+    float: left;
+    margin-right: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .largeHeadline {
+    padding-top: 50px;
+    font-size: 2.94em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  h4 {
+    text-align: left !important;
+  }
+}
+.panel-body p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  hyphenate-limit-chars: auto 5;
+  hyphenate-limit-lines: 2;
+}
+.full-width-image div {
+  padding: 0px;
+}
+.full-width-image img {
+  margin-top: 50px;
+  image-orientation: from-image;
+  width: 100%;
+  min-height: 200px;
+}
+.partner img {
+  margin-right: 3em;
+  margin-bottom: 1em;
+}
+#gallerycarousel img {
+  margin: auto;
+  border-radius: 10px;
+}
+.img-container img {
+  max-height: 300px;
+}
+.dropdown-menu li a:hover {
+  background-color: inherit;
+}
+.highlight {
+  color: #99ccff;
+}
+.body {
+  padding-top: 50px;
+}
+section {
+  padding-top: 40px;
+  margin-top: -40px;
+}
+.glyphicon-envelope:before {
+  margin-right: 5px;
+}
+.embeddedmap {
+  height: 333px;
+}

@@ -1,0 +1,181 @@
+/* CSS Document */
+@import "../bower_components/bootstrap/less/variables.less";
+
+@fontsize-headline: 4.9em;
+
+a,
+a:focus{
+   outline: 0;
+}
+a:focus{
+	text-decoration:none;
+}
+.navbar-right li{
+	font-size:18px;
+}
+.main-navbar {
+  -webkit-box-shadow: 0 0 10px 5px darken(@navbar-default-bg, 6.5%);
+  box-shadow: 0 0 10px 5px darken(@navbar-default-bg, 6.5%);
+}
+.headerrow {
+	background-image: url(../images/background_header.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 6% 0;
+	color: #f9e4f8;
+	text-shadow: #4d4d4d 2px 2px 2px;
+}
+
+.largeHeadline {
+	font-size: @fontsize-headline;
+}
+
+.headerrow img {
+	max-width: 70%;
+	height: 350px;
+	min-width: 350px;
+
+}
+.container h2 {
+  color: @brand-primary;
+}
+
+.footerContainer {
+	margin-top: 40px;
+}
+
+.invisibleSpacer {
+	border-width: 0;
+	padding-top: 20px;
+}
+.largeinvisibleSpacer {
+  border-width: 0;
+  padding-top: 65px;
+}
+
+.smallSpacer {
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.stickyElement {
+	position: fixed;
+	width: 100%;
+	z-index: 2000;
+}
+
+.hoersaal{
+	float: right;
+	padding-left:5px;
+}
+
+.glyphicon-menu-right{
+	position:absolute;
+	left:-4px;
+}
+.panel-title{
+	position:relative;
+	padding-left:0px;
+}
+
+.navelement{
+	height: 42px;
+	position: absolute;
+	margin-top: -42px;
+	border-width: 0px;
+}
+.color1 {
+  color: #b33e53;
+  font-weight: bold;
+}
+.color2 {
+  color: #879c65;
+  font-weight: bold;
+}
+.color3 {
+  color: #fa8c4e;
+  font-weight: bold;
+}
+
+.kd2lab {
+  color: #4ac1ec;
+  font-weight: bold;
+}
+.glyphicon-envelope{
+	position:relative;
+	top:2px;
+}
+
+.panel-body .img-container img {
+	max-width: 100%;
+}
+
+.panel-body .img-container {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+@media (min-width: 1200px) {
+	.col-lg-12 .panel-body .img-container {
+		/* Wenn gro�, werden Vortragsbilder in Containern, die �ber die ganze Seitenbreite gehen, links angezeigt. */
+		width: auto;
+		float: left;
+		margin-right: 1em;
+	}
+}
+@media (max-width: @screen-sm) {
+	.largeHeadline{
+		padding-top: 50px;
+		font-size: @fontsize-headline*0.6;
+	}
+}
+@media (max-width: @screen-lg) {
+	h4{
+		text-align:left !important;
+	}
+}
+
+.panel-body p { 
+	text-align: justify;
+
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto; 
+
+	hyphenate-limit-chars: auto 5;
+	hyphenate-limit-lines: 2;
+}
+.full-width-image div {
+  padding: 0px;
+}
+.full-width-image img {
+  margin-top: 50px;
+  image-orientation: from-image;
+  width: 100%;
+  min-height: 200px;
+}
+.partner img {
+	margin-right: 3em;
+	margin-bottom: 1em;
+}
+
+#gallerycarousel img {
+	margin: auto;
+}
+
+.carousel-control,
+.carousel-inner {
+  border-radius: 10px;
+}
+.img-container img{
+	max-height: 300px;
+}
+
+.embeddedmap {
+  height: 333px;
+}
+

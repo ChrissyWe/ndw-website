@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Nacht der Wissenschaft//DE
+BEGIN:VEVENT
+UID:nacht-der-wissenschaft-2025@ndw-ka.de
+DTSTAMP:20250101T120000Z
+DTSTART;TZID=Europe/Berlin:20251121T180000
+DTEND;TZID=Europe/Berlin:20251122T040000
+SUMMARY:Nacht der Wissenschaft
+DESCRIPTION:Mehr Infos: https://www.ndw-ka.de/
+END:VEVENT
+END:VCALENDAR

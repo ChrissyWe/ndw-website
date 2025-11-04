@@ -1,0 +1,144 @@
+/* CSS Document */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Maven Pro Regular'), local('MavenProRegular'), url(https://fonts.gstatic.com/s/mavenpro/v7/MG9KbUZFchDs94Tbv9U-paCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Maven Pro Medium'), local('MavenProMedium'), url(https://fonts.gstatic.com/s/mavenpro/v7/SQVfzoJBbj9t3aVcmbspRonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Maven Pro Bold'), local('MavenProBold'), url(https://fonts.gstatic.com/s/mavenpro/v7/uDssvmXgp7Nj3i336k_dSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Maven Pro Black'), local('MavenProBlack'), url(https://fonts.gstatic.com/s/mavenpro/v7/-91TwiFzqeL1F7Kh91APwYnF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+}
+
+a,
+a:focus {
+  outline: 0;
+}
+a:focus {
+  text-decoration: none;
+}
+.navbar-right li {
+  font-size: 20px;
+}
+.headerrow {
+  background-image: url(../images/background_header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6% 0;
+  color: white;
+  text-shadow: #000 2px 2px 2px;
+}
+.largeHeadline {
+  font-size: 4em;
+}
+.headerrow img {
+  max-width: 70%;
+  height: auto;
+}
+.footerContainer {
+  margin-top: 40px;
+}
+.invisibleSpacer {
+  border-width: 0;
+  padding-top: 20px;
+}
+.smallSpacer {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+.stickyElement {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.hoersaal {
+  float: right;
+  padding-left: 5px;
+}
+.glyphicon-menu-right {
+  position: absolute;
+  left: -4px;
+}
+.panel-title {
+  position: relative;
+  padding-left: 16px;
+}
+.navelement {
+  height: 42px;
+  position: absolute;
+  margin-top: -42px;
+  border-width: 0px;
+}
+.row{
+  margin-top:20px;
+}
+.color1 {
+  color: #FF6355;
+  font-weight: bold;
+}
+.color2 {
+  color: #4186D3;
+  font-weight: bold;
+}
+.color3 {
+  color: #FFDB00;
+  font-weight: bold;
+}
+.glyphicon-envelope {
+  position: relative;
+  top: 2px;
+}
+.panel-body .img-container img {
+  max-width: 100%;
+}
+.panel-body .img-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1em;
+}
+@media (min-width: 1200px) {
+  .col-lg-12 .panel-body .img-container {
+    /* Wenn gro�, werden Vortragsbilder in Containern, die �ber die ganze Seitenbreite gehen, links angezeigt. */
+    width: auto;
+    float: left;
+    margin-right: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .largeHeadline {
+    padding-top: 50px;
+    font-size: 2.4em;
+  }
+}
+.panel-body p {
+  text-align: justify;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: auto 5;
+  hyphenate-limit-lines: 2;
+}
+.partner img {
+  margin-right: 3em;
+  margin-bottom: 1em;
+}
+#gallerycarousel img {
+  margin: auto;
+}
