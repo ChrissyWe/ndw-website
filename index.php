@@ -52,9 +52,6 @@
     <link rel="shortcut icon" href="/favicon.ico">
 
     <meta name="theme-color" content="#000000">
-
-
-
 </head>
 
 <body class="text-white">

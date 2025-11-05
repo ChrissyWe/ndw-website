@@ -366,18 +366,23 @@
         ${safeImg ? `<img class="talk-image" src="${escapeAttr(safeImg)}" alt="${escapeAttr(decodeUnicode(safeAlt))}">` : ""}
       </div>
     `;
+    const hasDetails = safeDesc || lecturerLine || languageLine || safeImg;
 
-    return `
-      <div class="talk-block">
-        <p class="time-slot">${escapeText(safeTime)}</p>
-        <button class="talk-toggle" type="button" aria-expanded="false" aria-controls="${panelId}">
-          <span class="talk-title-text">${escapeText(safeTitle)}</span>
-        </button>
-        <div class="talk-details" id="${panelId}" aria-hidden="true" style="max-height:0; opacity:0;">
-          ${detailsInner}
-        </div>
-      </div>
-    `;
+    const toggleButton = hasDetails
+      ? `<button class="talk-toggle" type="button" aria-expanded="false" aria-controls="${panelId}">
+       <span class="talk-title-text">${escapeText(safeTitle)}</span>
+     </button>`
+      : `<div class="talk-toggle" aria-disabled="true">
+       <span class="talk-title-text">${escapeText(safeTitle)}</span>
+     </div>`;
+
+    return `<div class="talk-block">
+    <p class="time-slot">${escapeText(safeTime)}</p>
+    ${toggleButton}
+    ${hasDetails ? `
+    <div class="talk-details" id="${panelId}" aria-hidden="true" style="max-height:0; opacity:0;">
+      ${detailsInner}
+    </div>` : ""}</div>`;
   }
 
   /**

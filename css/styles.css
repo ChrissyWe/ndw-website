@@ -190,9 +190,9 @@ button:focus .burger-icon rect {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    text-align: center;
+    text-align: center;/* 
     padding-left: clamp(1rem, 6vw, 3rem);
-    padding-top: clamp(4vh, 8vh, 12vh);
+    padding-top: clamp(4vh, 8vh, 12vh); */
 }
 
 @media (min-width: 992px) {
@@ -422,27 +422,74 @@ button:focus .burger-icon rect {
     margin: 0 0 .5rem 0;
 }
 
-/* clickable title toggle */
-.talk-toggle {
-    all: unset;
-    /* remove default button styles */
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--text-on-dark);
-    padding-right: 1.5rem;
-    /* space for potential chevron */
-}
 
 .talk-toggle:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
 }
+.talk-toggle {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* text bleibt zentriert */
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-on-dark);
+    padding-right:1.5rem; /* platz nach rechts für den Pfeil */
+}
+
+.talk-toggle::after {
+    content:"";
+    position:absolute;
+    right:0;                   /* pfeil am rechten Rand */
+    top:10px;
+    transform:translateY(-50%);
+    border-top:.4em solid currentColor;
+    border-left:.35em solid transparent;
+    border-right:.35em solid transparent;
+    transition: transform .2s ease;
+}
+
+.talk-toggle[aria-expanded="true"]::after {
+    transform:translateY(-50%) rotate(180deg);
+}
+
+
+.talk-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Caret NUR bei echten Buttons zeichnen */
+button.talk-toggle::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transform: translateY(-50%);
+  border-top: .4em solid currentColor;
+  border-left: .35em solid transparent;
+  border-right: .35em solid transparent;
+  transition: transform .2s ease;
+}
+
+/* aufgeklappt -> Pfeil drehen */
+button.talk-toggle[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* KEIN Pfeil bei Platzhaltern/disabled/nur-Text */
+.talk-toggle[disabled]::after,
+.talk-toggle[aria-disabled="true"]::after,
+.talk-block.is-placeholder .talk-toggle::after,
+div.talk-toggle::after {
+  content: none !important;
+}
+
 
 /* collapsible body (height animated via JS) */
 .talk-details {

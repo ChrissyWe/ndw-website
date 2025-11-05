@@ -8,8 +8,8 @@
             "@context": "https://schema.org",
             "@type": "Event",
             "name": "Nacht der Wissenschaft",
-            "startDate": "2022-11-18T18:00:00+01:00",
-            "endDate": "2021-11-19T01:00:00+01:00",
+            "startDate": "2025-11-21T18:00:00+01:00",
+            "endDate": "2025-11-22T04:00:00+01:00",
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": {
@@ -19,7 +19,7 @@
             "image": [
                 "https://www.ndw-ka.de/images/logo.png"
             ],
-            "description": "In der Nacht vom 18. November findet auch dieses Semester die Nacht der Wissenschaft statt. Es wird viele spannende Vorträge aus den verschiedensten Fachbereichen geben.",
+            "description": "In der Nacht vom 21. November findet auch dieses Semester die Nacht der Wissenschaft statt. Es wird viele spannende Vorträge aus den verschiedensten Fachbereichen geben.",
             "organizer": {
                 "@type": "Organization",
                 "name": "Hochschulgruppe Nacht der Wissenschaft",
@@ -30,18 +30,28 @@
 
     <script src="/js/i18n.js" defer></script>
 
-    <!-- New accessible About page using existing site styles -->
     <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Über die Nacht der Wissenschaft: Team, Mission, Geschichte und Kontakt.">
+    <meta name="description"
+        content="Nacht der Wissenschaft am KIT: Programm, Highlights und Informationen zum Event am 21. November 2025.">
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Site CSS (keeps your current background and components) -->
-    <link rel="stylesheet" href="css/styles.css?v=7">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 
 
-    <title>Über uns – Nacht der Wissenschaft</title>
+    <title>Nacht der Wissenschaft</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <meta name="theme-color" content="#000000">
 </head>
 
 <body class="text-white">
