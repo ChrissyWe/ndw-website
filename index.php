@@ -8,8 +8,8 @@
             "@context": "https://schema.org",
             "@type": "Event",
             "name": "Nacht der Wissenschaft",
-            "startDate": "2022-11-18T18:00:00+01:00",
-            "endDate": "2021-11-19T01:00:00+01:00",
+            "startDate": "2025-11-21T18:00:00+01:00",
+            "endDate": "2025-11-22T04:00:00+01:00",
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": {
@@ -19,7 +19,7 @@
             "image": [
                 "https://www.ndw-ka.de/images/logo.png"
             ],
-            "description": "In der Nacht vom 18. November findet auch dieses Semester die Nacht der Wissenschaft statt. Es wird viele spannende Vorträge aus den verschiedensten Fachbereichen geben.",
+            "description": "In der Nacht vom 21. November findet auch dieses Semester die Nacht der Wissenschaft statt. Es wird viele spannende Vorträge aus den verschiedensten Fachbereichen geben.",
             "organizer": {
                 "@type": "Organization",
                 "name": "Hochschulgruppe Nacht der Wissenschaft",
@@ -139,13 +139,12 @@
 
             <div class="highlight-row">
                 <figure class="highlight-media">
-                    <!--
-            The alt text will be injected by JS along with the image. Keep empty until then.
-            loading="lazy" to improve performance.
-          -->
-                    <img id="event-image" src="" alt="" loading="lazy">
+                    <div id="event-image-wrap">
+                        <img id="event-image" alt="" loading="lazy">
+                    </div>
                     <figcaption id="event-figcaption" class="visually-hidden"></figcaption>
                 </figure>
+
 
                 <article class="highlight-content text-white" aria-live="polite" aria-busy="true"
                     aria-labelledby="event-title" aria-describedby="event-body">
@@ -232,7 +231,7 @@
             <div class="col-lg-12">
                 <h2 id="supporters-heading" class="section-heading" data-i18n="supporters.heading">Unterstützung und
                     Kooperation</h2>
-                <p class="partner">Wir danken unseren Unterstützern:</p>
+                <p class="partner" data-i18n="thank.you.supporters"></p>
                 <br>
                 <div class="supporter-logos" role="list">
                     <a role="listitem" href="https://www.kit.edu" target="_blank">

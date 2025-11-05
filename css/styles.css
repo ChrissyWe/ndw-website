@@ -313,6 +313,7 @@ button:focus .burger-icon rect {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    align-items: stretch;
 }
 
 .highlight-media {
@@ -366,18 +367,11 @@ button:focus .burger-icon rect {
     }
 
     .highlight-media {
-        flex-basis: 65%;
-        min-width: 0;
-    }
-
-    .highlight-media img {
-        min-height: clamp(280px, 30vh, 420px);
-        max-height: clamp(420px, 50vh, 900px);
+        flex: 0 1 60%; min-width: 0;
     }
 
     .highlight-content {
-        flex-basis: 35%;
-        background: transparent;
+       flex: 1 1 40%; 
     }
 }
 
@@ -815,17 +809,42 @@ button:focus .burger-icon rect {
     cursor: default;
 }
 
-/* Keep original image ratio, never crop */
-.talk-details-inner .talk-image,
 #event-image {
     display: block;
-    margin: 0 auto;
-    /* horizontal center */
-    max-width: 100%;
-    height: auto !important;
-    width: auto;
-    object-fit: contain !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0;
+    box-shadow: none;
 }
+
+#event-image-wrap {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-height: clamp(320px, 45vh, 560px);
+    overflow: hidden;
+}
+
+#event-image-wrap #event-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.talk-details {
+    overflow: visible;
+}
+
+.talk-details img.talk-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
 
 /* Optional: if you had a fixed wrapper ratio, disable it for images */
 .talk-details-inner,
@@ -844,5 +863,6 @@ a:hover {
 
 /* Render \n as real line breaks only for long-copy areas */
 .about-body[data-i18n] {
-  white-space: pre-line; /* turn \n into line breaks */
+    white-space: pre-line;
+    /* turn \n into line breaks */
 }

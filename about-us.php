@@ -66,7 +66,7 @@
             <!-- Danach das 2-Spalten-Layout -->
             <div class="row align-items-center gx-5">
                 <!-- LINKS: Atom -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 text-lg-start text-center">
                     <img src="images/logo.png" class="img-fluid" alt="Symbolbild: Atomstruktur" loading="lazy">
                 </div>
 
@@ -93,137 +93,101 @@
                 <h2 id="team-heading" class="section-heading-about">Team</h2>
 
                 <ul class="row list-unstyled g-4 team-grid" role="list">
-                    <!-- Card 1 -->
-                    <li class="col-6 col-md-3 col-lg-2">
+                <!-- Card 1 -->
+                <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t1-name">
                             <div class="team-photo">
-                                <img src="images/team/vincent.png" alt="Vincent B." loading="lazy"
+                                <img src="images/team/person.png" alt="Johannes B." loading="lazy"
                                     decoding="async">
                             </div>
-                            <figcaption class="visually-hidden">Portrait von Vincent B.</figcaption>
+                            <figcaption class="visually-hidden">Portrait von Johannes B.</figcaption>
                         </figure>
-                        <h3 id="t1-name" class="team-name">Vincent B.</h3>
-                        <!-- <p class="team-role">Text</p> -->
+                        <h3 id="t1-name" class="team-name">Johannes B.</h3>
                     </li>
 
                     <!-- Card 2 -->
                     <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t2-name">
                             <div class="team-photo">
-                                <img src="images/team/person.png" alt="Alexander D." loading="lazy"
+                                <img src="images/team/vincent.png" alt="Vincent B." loading="lazy"
                                     decoding="async">
                             </div>
-                            <figcaption class="visually-hidden">Portrait von Alexander D.</figcaption>
+                            <figcaption class="visually-hidden">Portrait von Vincent B.</figcaption>
                         </figure>
-                        <h3 id="t2-name" class="team-name">Alexander D.</h3>
+                        <h3 id="t2-name" class="team-name">Vincent B.</h3>
+                        <!-- <p class="team-role">Text</p> -->
                     </li>
 
                     <!-- Card 3 -->
                     <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t3-name">
                             <div class="team-photo">
+                                <img src="images/team/person.png" alt="Alexander D." loading="lazy"
+                                    decoding="async">
+                            </div>
+                            <figcaption class="visually-hidden">Portrait von Alexander D.</figcaption>
+                        </figure>
+                        <h3 id="t3-name" class="team-name">Alexander D.</h3>
+                    </li>
+
+                    <!-- Card 3 -->
+                    <li class="col-6 col-md-3 col-lg-2">
+                        <figure class="team-card" aria-labelledby="t4-name">
+                            <div class="team-photo">
                                 <img src="images/team/kassandra.jpg" alt="Kassandra D." loading="lazy"
                                     decoding="async">
                             </div>
                             <figcaption class="visually-hidden">Portrait von Kassandra D.</figcaption>
                         </figure>
-                        <h3 id="t3-name" class="team-name">Kassandra D.</h3>
-                    </li>
-
-                    <!-- Card 4 -->
-                    <li class="col-6 col-md-3 col-lg-2">
-                        <figure class="team-card" aria-labelledby="t4-name">
-                            <div class="team-photo">
-                                <img src="images/team/person.png" alt="Tim H." loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <figcaption class="visually-hidden">Portrait von Tim H.</figcaption>
-                        </figure>
-                        <h3 id="t4-name" class="team-name">Tim H.</h3>
+                        <h3 id="t4-name" class="team-name">Kassandra D.</h3>
                     </li>
 
                     <!-- Card 5 -->
                     <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t5-name">
                             <div class="team-photo">
-                                <img src="images/team/person.png" alt="Silvia R." loading="lazy"
+                                <img src="images/team/person.png" alt="Tim H." loading="lazy"
                                     decoding="async">
                             </div>
-                            <figcaption class="visually-hidden">Portrait von Silvia R.</figcaption>
+                            <figcaption class="visually-hidden">Portrait von Tim H.</figcaption>
                         </figure>
-                        <h3 id="t5-name" class="team-name">Silvia R.</h3>
+                        <h3 id="t5-name" class="team-name">Tim H.</h3>
                     </li>
 
                     <!-- Card 6 -->
                     <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t6-name">
                             <div class="team-photo">
-                                <img src="images/team/person.png" alt="Benedikt S." loading="lazy"
+                                <img src="images/team/person.png" alt="Silvia R." loading="lazy"
                                     decoding="async">
                             </div>
-                            <figcaption class="visually-hidden">Portrait von Benedikt S.</figcaption>
+                            <figcaption class="visually-hidden">Portrait von Silvia R.</figcaption>
                         </figure>
-                        <h3 id="t6-name" class="team-name">Benedikt S.</h3>
+                        <h3 id="t6-name" class="team-name">Silvia R.</h3>
                     </li>
 
                     <!-- Card 7 -->
                     <li class="col-6 col-md-3 col-lg-2">
                         <figure class="team-card" aria-labelledby="t7-name">
                             <div class="team-photo">
+                                <img src="images/team/person.png" alt="Benedikt S." loading="lazy"
+                                    decoding="async">
+                            </div>
+                            <figcaption class="visually-hidden">Portrait von Benedikt S.</figcaption>
+                        </figure>
+                        <h3 id="t7-name" class="team-name">Benedikt S.</h3>
+                    </li>
+
+                    <!-- Card 8 -->
+                    <li class="col-6 col-md-3 col-lg-2">
+                        <figure class="team-card" aria-labelledby="t8-name">
+                            <div class="team-photo">
                                 <img src="images/team/christina.jpg" alt="Christina W." loading="lazy"
                                     decoding="async">
                             </div>
                             <figcaption class="visually-hidden">Portrait von Christina W.</figcaption>
                         </figure>
-                        <h3 id="t7-name" class="team-name">Christina W.</h3>
-                    </li>
-
-                    <!-- Card 8 -->
-                    <li class="col-6 col-md-3 col-lg-2">
-                        <figure class="team-card" aria-labelledby="t1-name">
-                            <div class="team-photo">
-                                <img src="images/team/person.png" alt="Alex K., Organisation und Technik" loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <figcaption class="visually-hidden">Portrait von Alex K.</figcaption>
-                        </figure>
-                        <h3 id="t8-name" class="team-name">ALEX K.</h3>
-                    </li>
-
-                    <!-- Card 9 -->
-                    <li class="col-6 col-md-3 col-lg-2">
-                        <figure class="team-card" aria-labelledby="t1-name">
-                            <div class="team-photo">
-                                <img src="images/team/person.png" alt="Alex K., Organisation und Technik" loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <figcaption class="visually-hidden">Portrait von Alex K.</figcaption>
-                        </figure>
-                        <h3 id="t9-name" class="team-name">ALEX K.</h3>
-                    </li>
-
-                    <!-- Card 10 -->
-                    <li class="col-6 col-md-3 col-lg-2">
-                        <figure class="team-card" aria-labelledby="t1-name">
-                            <div class="team-photo">
-                                <img src="images/team/person.png" alt="Alex K., Organisation und Technik" loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <figcaption class="visually-hidden">Portrait von Alex K.</figcaption>
-                        </figure>
-                        <h3 id="t10-name" class="team-name">ALEX K.</h3>
-                    </li>
-
-                    <!-- Card 11 -->
-                    <li class="col-6 col-md-3 col-lg-2">
-                        <figure class="team-card" aria-labelledby="t1-name">
-                            <div class="team-photo">
-                                <img src="images/team/person.png" alt="Alex K., Organisation und Technik" loading="lazy"
-                                    decoding="async">
-                            </div>
-                            <figcaption class="visually-hidden">Portrait von Alex K.</figcaption>
-                        </figure>
-                        <h3 id="t11-name" class="team-name">ALEX K.</h3>
+                        <h3 id="t8-name" class="team-name">Christina W.</h3>
                     </li>
                 </ul>
             </div>

@@ -56,7 +56,7 @@
     {
       "hall": "1",
       "time": "21:00",
-      "title": "Additive Fertigung",
+      "title": "Nachhaltige Fertigung – Geht das? 3D-Druck als Chance",
       "desc": "Jahrzehntelang stand in der Fertigungstechnik vor allem Zeit- und Kosteneffizienz im Fokus, Energie- und Ressourcenschonung spielten kaum eine Rolle. Heute ermöglichen additive Verfahren (3D-Druck) neue Wege zu nachhaltigen Produkten und Prozessen von ressourcenschonender Materialnutzung über Leichtbaustrukturen bis zu Implantaten.\nDoch hoher Energiebedarf und geringe Effizienz bleiben zentrale Herausforderungen. Wie kann unsere Forschung dazu beitragen, die additive Fertigung nachhaltiger zu gestalten? ",
       "lecturer": "Frederik Zanger",
       "language": "Deutsch",
@@ -108,7 +108,7 @@
     {
       "hall": "1",
       "time": "01:00",
-      "title": "Robotics and Autonomous Systems",
+      "title": "Stabheuschrecken und Hunde als Vorbilder für moderne Laufroboter – Von der Natur inspiriert zur industriellen Wertschöpfung",
       "desc": "ie schaffen es Stabheuschrecken, mit ihren dünnen Beinen sicher über Äste zu klettern, und wie können Hunde sich hochdynamisch auf unebenem Terrain bewegen? Die Natur liefert seit Millionen von Jahren erprobte Lösungen für effiziente Bewegung, Stabilität und Anpassungsfähigkeit. Diese Prinzipien prägen auch heute noch die Entwicklung moderner Laufroboter.\nIn diesem Vortrag werden biologisch inspirierte Ansätze im Leichtbau, im kinematischen Design und in der Bewegungskoordination vorgestellt. Sie bilden die Grundlage für robuste und flexible Laufroboter. Ergänzt wird dies durch kurze Einblicke in Stabilitätsmodelle, regelungstechnische Konzepte und moderne Machine-Learning-Verfahren. Diese erlauben es Robotern heute, selbst Treppen und Leitern zu überwinden.\nVon der Stabheuschrecke bis zum Hund: Die Verbindung von Biologie und Robotik eröffnet neue Wege zu autonomen Systemen, die nicht nur laufen, sondern auch echte Aufgaben in der Praxis übernehmen, beispielsweise bei der Inspektion großer Industrieanlagen.\nBildquelle: FZI",
       "lecturer": "Arne Rönnau",
       "language": "Deutsch",
@@ -147,7 +147,7 @@
     {
       "hall": "2",
       "time": "19:00",
-      "title": "Forschende Kamera & Doku in Lehre",
+      "title": "Forschen mit Film: Praxis, Theorie und Diskurs verknüpfen",
       "desc": "Warum Seminare und Abschlußarbeiten nicht als Dokumentarfilme erarbeiten und dadurch Erkenntnisse, interessante Projekte und Akteure sichtbar und verhandelbar machen?\nMit Filmbespielen zeige ich wie Reales Erleben zum Forschungsgegenstand wird und das Medium Film hilft Erfahrungen zu reflektieren, zu vertiefen und mit anderen darüber ins Gespräch zu kommen.",
       "lecturer": "Andreas Stiglmayr",
       "language": "Deutsch",
@@ -186,7 +186,7 @@
     {
       "hall": "2",
       "time": "22:00",
-      "title": "Physikalische Kryptographie",
+      "title": "Mining ohne Megawatt: Ein physikalischer „Proof of Work\" für die Blockchain",
       "desc": "Die Kryptowährung Bitcoin zeigt, dass ein weltweites Zahlungssystem ohne eine zentrale Instanz (etwa eine Bank) umsetzbar ist. Möglich macht das der sogenannte \"Proof of Work\", bzw. das \"Mining\". Dieses verbraucht jedoch Unmengen an Strom: Das Bitcoin Netzwerk belegt aktuell Platz fünf aller Länder Europas nach Stromverbrauch. \nWir forschen deshalb an einer Alternative, dem \"Proof of Physical Work\". Anstelle von digitalen Rechenrätseln nutzen wir physikalische Prozesse. Das kostet reale Zeit und Materialien, aber kaum CO₂. So ließe sich die Sicherheit einer Blockchain erhalten, ohne die Umwelt zu belasten. Unsere Idee verbindet Kryptographie mit Ingenieur- und Naturwissenschaften und macht die Komplexität der Natur nutzbar.",
       "lecturer": "Frank Rhein",
       "language": "Deutsch",
@@ -199,7 +199,7 @@
     {
       "hall": "2",
       "time": "23:00",
-      "title": "Automotive Electronics and Software Engineering",
+      "title": "Von der Kaffeemaschine zum Roboter-Taxi: Trends, Chancen und Herausforderungen SW-definierter Anwendungen",
       "desc": "Von der Kaffeemaschine zum Roboter-Taxi: Trends, Chancen und Herausforderungen SW-definierter Anwendungen\nÜberall erobern zwei große Trends die Tätigkeiten gerade auch unseres Alltags. Zum einen sind das immer mehr durch Software-definierte Funktionalitäten und zum anderen Systeme die über die Luft untereinander oder von zentralen Warte aus, der „Cloud“, kommunizieren.\nWarum können wir das heute, wo stehen wir mit diesen Ansätzen, was macht Sinn und ist auch unter verantwortungsbewusstem Engineering vertretbar? Diese Fragen werden anhand der Mobilität als eine der über Jahrzehnte in Mitteleuropa führenden Branchen und deren Ausstrahlung auf andere Industriezweige erörtert. Und natürlich wird dabei die wachsende Bedeutung der Künstlichen Intelligenz nicht fehlen. ",
       "lecturer": "Eric Sax",
       "language": "Deutsch",
@@ -226,10 +226,10 @@
       "hall": "2",
       "time": "01:00",
       "title": "Digital Twin of City Trees",
-      "desc": "Deutsch",
+      "desc": "arlsruhe has approximately 145,000 public, standalone trees managed by the Gartenbauamt/Horticulture Department. However, only four staff members oversee their health due to staff shortages. Droughts, heatwaves, and plant diseases further complicate this task. This highlights one of many challenges in urban tree management, and this issue is occurring in cities across Germany and other countries. In this presentation, I will introduce an application of a new digital twin technology to enhance the sustainable management of urban trees, which we are assessing in the TreeTwin work package of the KIT’s URBORETUM project.",
       "lecturer": "Somidh Saha",
-      "language": "",
-      "image": "",
+      "language": "English",
+      "image": "images/teaser/Teaser_Saha_Somidh.png",
       "imageAlt": "",
       "profTitle": "Dr. rer. nat.",
       "instituteLabel": "ITAS",
@@ -264,7 +264,7 @@
     {
       "hall": "3",
       "time": "20:00",
-      "title": "Marketing and Sales Strategy",
+      "title": "Kann uns KI alle zu Pepsi-trinkenden Opel-Fahrern machen? Über die manipulative Macht von KI in der Werbung",
       "desc": "",
       "lecturer": "Martin Klarmann",
       "language": "Deutsch",
@@ -277,7 +277,7 @@
     {
       "hall": "3",
       "time": "21:00",
-      "title": "Empirische Filmforschung zu Nachhaltigkeitsthemen",
+      "title": "Empirische Filmforschung zu Nachhaltigkeitsthemen: Welchen Einfluss können Dokumentarfilme haben?",
       "desc": "Im interaktiven Vortrag werden erste Forschungsergebnisse aus dem ICN-Projekt „Visionen der Nachhaltigkeit“ vorgestellt. Es wird aufgezeigt, welchen Einfluss Dokumentarfilme zu Nachhaltigkeitsthemen haben können und welche Emotionen dabei ausgelöst werden. Zudem werden im Vortrag kurze Filmausschnitte gezeigt, die um eine Live-Umfrage mit dem Publikum ergänzt werden.",
       "lecturer": "Thomas Heintz",
       "language": "Deutsch",
@@ -303,7 +303,7 @@
     {
       "hall": "3",
       "time": "23:00",
-      "title": "Pädagogik im Betrieb mit Science Slam Elementen",
+      "title": "Pädagogik im Betrieb – zwischen Fakten und Legenden",
       "desc": "as fällt Ihnen eine, wenn Sie an ´Pädagogik im Betrieb´ denken?\nEtwa ein Betriebskindergarten!? Auch möglich, aber hier geht es eher um Erwachsene und mehr um Lernprozesse in und von Unternehmen.\nWussten Sie, dass\n- die Erwachsenen- und Weiterbindung in Deutschland nach Zahl der Teilnehmer, der Organisationen und auch nach Zahl der Beschäftigten der größte Bildungs bereich ist… \n- ca. 26 Mio. Teilnehmende dort ca. 11 Mio. Schüler*innen und knapp 3 Mio. Studierende gegenüberstehen…\n- Betriebe und Unternehmen mit Abstand (ca. 70 %) die größten Träger und Anbieter von Erwachsenen- und Weiterbildung in Deutschland sind…\n- Betriebe und Unternehmen im Jahr ca. 42 Mrd. € (gesamt) in betriebliche Weiterbildung investieren…\n\nErfahren Sie mehr und tauchen Sie ein in den “betriebspädagogischen Märchenwald“. Hier lernen Sie Sagen und Legenden, aber auch Wahrheiten und Fakten zu “Pädagogik im Betrieb“ kennen. …Schauen Sie vorbei!",
       "lecturer": "Martin Schwarz",
       "language": "Deutsch",
@@ -312,6 +312,19 @@
       "profTitle": "Dr. habil. Akad. Oberrat & Prof. für Berufspädagogik",
       "instituteLabel": "IBAP",
       "instituteUrl": "https://www.ibap.kit.edu/"
+    },
+    {
+      "hall": "3",
+      "time": "00:00",
+      "title": "Das Klima macht Geschichte(n)\n200 Jahre KIT: Technik- und Klimageschichte von der Frühindustrialisierung zur Energiewende",
+      "desc": "Der wissenschaftliche und technische Fortschritt hat unsere Lebensverhältnisse revolutioniert – Ernährung, Mobilität, Energie, Gesundheit. Doch er hat auch die Klimakrise mit heraufbeschworen. Der multimediale Vortrag zeigt, wie seit der Gründung des KIT vor 200 Jahren Technikgeschichte und Klimawandel miteinander verwoben sind – und wie das KIT heute mit innovativer Forschung zu Klimaschutz und Resilienz beiträgt.\nVon der Frühindustrialisierung in Baden über die Ammoniaksynthese bis zur Energiewende: Die Vortragenden Hans Schipper (Klimafolgenforschung) und Felix Mescoli (Autor der KIT-History) schlagen einen faszinierenden Bogen von den Anfängen des CO₂-Ausstoßes bis zu den Lösungen von morgen.\nBildquelle: Wikipedia-Eintraf BASF",
+      "lecturer": "Dr. Hans Schipper und Dr. phil. Felix Mescoli",
+      "language": "Deutsch",
+      "image": "images/teaser/Teaser_Mescoli.jpg",
+      "imageAlt": "",
+      "profTitle": "",
+      "instituteLabel": "",
+      "instituteUrl": ""
     }
   ]
 }

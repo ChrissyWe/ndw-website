@@ -64,7 +64,7 @@
             <img src="images/logo.png" class="hero-graphic img-fluid d-block mx-auto" alt="" loading="lazy">
                         <p id="hero-graphic-caption" class="visually-hidden">Logo der Nacht der Wissenschaft</p>
 
-            <h1 id="impressum" class="hero-headline mb-4 text-center" data-i18n="impressum">
+            <h1 id="impressum" class="hero-headline mb-4 text-center" data-i18n="impressum.title">
             </h1>
 
             <p>

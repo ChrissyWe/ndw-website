@@ -17,6 +17,7 @@
   const elTitle = document.getElementById("event-title");
   const elBody = document.getElementById("event-body");
   const elImg = document.getElementById("event-image");
+  const elImgWrap = document.getElementById("event-image-wrap");
   const elSpeaker = document.getElementById("event-speaker");
   const elLanguage = document.getElementById("event-language");
   const elInstitute = document.getElementById("event-institute");
@@ -86,7 +87,7 @@
         }
 
         container.innerHTML = rows.join("");
-        wireImageLoadReflow();
+        wireImageLoadReflow(container);
       });
 
       // 4d) Enable toggle animation
@@ -119,15 +120,17 @@
 
         if (elImg) {
           elImg.alt = highlightAlt;
+
           if (isImageUrl(highlightImage)) {
             elImg.src = highlightImage;
             elImg.style.display = "";
-            wireImageLoadReflow();
+
           } else {
             elImg.removeAttribute("src");
             elImg.style.display = "none";
           }
         }
+
 
         if (elSpeaker) {
           const profTitle = chosen.profTitle || "";
@@ -447,9 +450,9 @@
   };
 
   // Run once after you injected the HTML
-  function wireImageLoadReflow() {
-    // Re-measure the open panel when an image finishes loading
-    document.querySelectorAll(".talk-image").forEach((img) => {
+  function wireImageLoadReflow(root) {
+    const scope = root || document;
+    scope.querySelectorAll(".talk-image").forEach((img) => {
       if (img.dataset._reflowBound) return; // avoid double-binding
       img.dataset._reflowBound = "1";
 

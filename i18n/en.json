@@ -32,5 +32,9 @@
     "ical.file": "iCal File",
     "speaker": "Speaker:",
     "language": "Language:",
-    "impressum": "Impressum"
+    "about.us.first.paragraph": "Behind the ‘Nacht der Wissenschaft’ is a student initiative at KIT. Since 2016, the event of the same name has been planned, organised and thematically designed anew each year. Throughout the year, the group meets regularly, approaches professors for lectures and develops a coherent concept for the evening based on ideas.",
+    "about.us.second.paragraph": "If you would like to contribute your own ideas or help with the organisation, please contact us at info@ndw-ka.de.",
+    "impressum": "Impressum",
+    "impressum.title": "Impressum & Contact",
+    "thank.you.supporters": "We would like to thank our supporters:"
 }
